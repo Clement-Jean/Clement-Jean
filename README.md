@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-#### Connect With Me 👇
+#### Let's keep in touch 👇
 
 [![Udemy][1]][2] [![LinkedIn][3]][4] [![StackOverflow][5]][6]
 
