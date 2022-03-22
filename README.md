@@ -10,3 +10,35 @@
 [4]:  https://www.linkedin.com/in/clement-jean "My LinkedIn Profile"
 [5]:  https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white
 [6]:  https://stackoverflow.com/users/11269045/cl%c3%a9ment-jean "My StackOverflow Profile"
+
+```proto
+message AboutMe {
+  google.protobuf.Empty value = 1 [
+    (api_version) = 26,
+    (created_at) = {
+      chinese_year: "🐷",
+      year: 1995,
+      month: NOVEMBER,
+      day: 20
+    },
+    (kind) = HUMAN,
+    (metadata).name = "Clément Jean",
+    (metadata).from = "🇫🇷",
+    (metadata).live_in = "🇨🇳",
+    (metadata).languages = C,
+    (metadata).languages = CPP,
+    (metadata).languages = GO,
+    (metadata).languages = JAVA,
+    (metadata).languages = KOTLIN,
+    (status).work = IMPROVING_AN_ALREADY_EXISTING_COURSE,
+    (spec).purpose = "Help others learn Protobuf and gRPC",
+    (favorite) = {
+      number: 42,
+      programing_language: UNKNOWN,
+      emoji_sequence: "🙈🙉🙊"
+    }
+  ];
+}
+```
+
+Wonder if that ☝️ compiles? check [here](https://github.com/Clement-Jean/Clement-Jean/blob/main/proto)
