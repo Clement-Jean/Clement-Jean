@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package clementjean;
+
+import "learning.proto";
+import "resting.proto";
+import "work.proto";
+
+option go_package = "github.com/Clement-Jean/Clement-Jean/proto";
+option csharp_namespace = "ClementJean";
+option java_package = "com.clementjean.proto";
+option java_multiple_files = true;
+
+message Status {
+  oneof value {
+    Work work = 1;
+    Resting resting = 2;
+    Learning learning = 3;
+  }
+}

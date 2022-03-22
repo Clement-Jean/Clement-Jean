@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package clementjean;
+
+import "date.proto";
+import "favorite.proto";
+import "google/protobuf/descriptor.proto";
+import "kind.proto";
+import "metadata.proto";
+import "spec.proto";
+import "status.proto";
+
+option go_package = "github.com/Clement-Jean/Clement-Jean/proto";
+option csharp_namespace = "ClementJean";
+option java_package = "com.clementjean.proto";
+option java_multiple_files = true;
+
+extend google.protobuf.FieldOptions {
+  uint32 api_version = 1036;
+  Date created_at = 1037;
+  Kind kind = 10378;
+  Metadata metadata = 1039;
+  Status status = 1040;
+  Spec spec = 1041;
+  Favorite favorite = 1042;
+}

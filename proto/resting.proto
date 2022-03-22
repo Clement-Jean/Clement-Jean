@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package clementjean;
+
+option go_package = "github.com/Clement-Jean/Clement-Jean/proto";
+option csharp_namespace = "ClementJean";
+option java_package = "com.clementjean.proto";
+option java_multiple_files = true;
+
+enum Resting {
+  RESTING_UNSPECIFIED = 0;
+  WATCHING_SERIES = 1;
+  WALKING = 2;
+  GARDENING = 3;
+}

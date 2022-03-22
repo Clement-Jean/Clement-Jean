@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package clementjean;
+
+option go_package = "github.com/Clement-Jean/Clement-Jean/proto";
+option csharp_namespace = "ClementJean";
+option java_package = "com.clementjean.proto";
+option java_multiple_files = true;
+
+enum Learning {
+  LEARNING_UNSPECIFIED = 0;
+  A_NEW_PROGRAMING_LANGUAGE = 1;
+  ANOTHER_SKILL = 2;
+}

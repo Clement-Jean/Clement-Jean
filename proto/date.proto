@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package clementjean;
+
+option go_package = "github.com/Clement-Jean/Clement-Jean/proto";
+option csharp_namespace = "ClementJean";
+option java_package = "com.clementjean.proto";
+option java_multiple_files = true;
+
+enum Month {
+  MONTH_UNSPECIFIED = 0;
+  JANUARY = 1;
+  FEBRUARY = 2;
+  MARCH = 3;
+  APRIL = 4;
+  MAY = 5;
+  JUNE = 6;
+  JULY = 7;
+  AUGUST = 8;
+  SEPTEMBER = 9;
+  OCTOBER = 10;
+  NOVEMBER = 11;
+  DECEMBER = 12;
+}
+
+message Date {
+  string chinese_year = 1;
+  uint32 year = 2;
+  Month month = 3;
+  uint32 day = 4;
+}

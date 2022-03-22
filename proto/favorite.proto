@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package clementjean;
+
+import "programing_language.proto";
+
+option go_package = "github.com/Clement-Jean/Clement-Jean/proto";
+option csharp_namespace = "ClementJean";
+option java_package = "com.clementjean.proto";
+option java_multiple_files = true;
+
+message Favorite {
+  uint32 number = 1;
+  ProgramingLanguage programing_language = 2;
+  string emoji_sequence = 3;
+}

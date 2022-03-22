@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package clementjean;
+
+option go_package = "github.com/Clement-Jean/Clement-Jean/proto";
+option csharp_namespace = "ClementJean";
+option java_package = "com.clementjean.proto";
+option java_multiple_files = true;
+
+message Spec {
+  string purpose = 1;
+}
