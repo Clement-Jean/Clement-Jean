@@ -12,29 +12,33 @@
 [6]:  https://stackoverflow.com/users/11269045/cl%c3%a9ment-jean "My StackOverflow Profile"
 
 ```proto
-message Clement {
-  google.protobuf.Any all_about_me = 1 [
+message AboutMe {
+  google.protobuf.Empty value = 1 [
     (api_version) = 26,
-    (kind) = KIND_HUMAN,
-    (metadata).name = "Clement Jean",
+    (created_at) = {
+      chinese_year: "🐷",
+      year: 1995,
+      month: NOVEMBER,
+      day: 20
+    },
+    (kind) = HUMAN,
+    (metadata).name = "Clément Jean",
+    (metadata).from = "🇫🇷",
+    (metadata).live_in = "🇨🇳",
+    (metadata).languages = C,
+    (metadata).languages = CPP,
+    (metadata).languages = GO,
+    (metadata).languages = JAVA,
+    (metadata).languages = KOTLIN,
+    (status).work = IMPROVING_AN_ALREADY_EXISTING_COURSE,
     (spec).purpose = "Help others learn Protobuf and gRPC",
-    (spec).locations = {
-      type : "Udemy",
-      where : "https://www.udemy.com/user/jean-clement/",
-    },
-    (spec).locations = {
-      type : "LinkedIn",
-      where : "https://www.linkedin.com/in/clement-jean",
-    },
-    (spec).locations = {
-      type : "StackOverflow",
-      where : "https://stackoverflow.com/users/11269045/cl%c3%a9ment-jean",
-    },
     (favorite) = {
-      number: 42
+      number: 42,
+      programing_language: UNKNOWN,
+      emoji_sequence: "🙈🙉🙊"
     }
   ];
 }
 ```
 
-Wonder if that ☝️ compiles? check [here](https://github.com/Clement-Jean/Clement-Jean/blob/main/proto/clement.proto)
+Wonder if that ☝️ compiles? check [here](https://github.com/Clement-Jean/Clement-Jean/blob/main/proto)
