@@ -22,15 +22,13 @@ message AboutMe {
       day: 20
     },
     (kind) = HUMAN,
-    (metadata).name = "Clément Jean",
-    (metadata).from = "🇫🇷",
-    (metadata).live_in = "🇨🇳",
-    (metadata).languages = C,
-    (metadata).languages = CPP,
-    (metadata).languages = GO,
-    (metadata).languages = JAVA,
-    (metadata).languages = KOTLIN,
-    (status).work = IMPROVING_AN_ALREADY_EXISTING_COURSE,
+    (metadata) = {
+      name: "Clément Jean",
+      from: "🇫🇷",
+      live_in: "🇨🇳",
+      languages: [ C, CPP, GO, JAVA, KOTLIN ]
+    },
+    (status).work = RECORDING_A_NEW_COURSE,
     (spec).purpose = "Help others learn Protobuf and gRPC",
     (favorite) = {
       number: 42,
