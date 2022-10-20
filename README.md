@@ -39,4 +39,4 @@ message AboutMe {
 }
 ```
 
-Wonder if that ☝️ compiles? check [here](https://github.com/Clement-Jean/Clement-Jean/blob/main/proto)
+Wonder if that ☝️ compiles? Check [here](https://github.com/Clement-Jean/Clement-Jean/blob/main/proto). And credit where credit is due, this idea come from [@BretFisher](https://github.com/BretFisher)'s README.
