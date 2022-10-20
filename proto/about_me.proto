@@ -30,7 +30,7 @@ message AboutMe {
     (spec).purpose = "Help others learn Protobuf and gRPC",
     (favorite) = {
       number: 42,
-      programing_language: UNKNOWN,
+      programing_language: PROGRAMING_LANGUAGE_UNSPECIFIED,
       emoji_sequence: "🙈🙉🙊"
     }
   ];

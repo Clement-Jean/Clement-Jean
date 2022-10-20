@@ -8,7 +8,7 @@ option java_package = "com.clementjean.proto";
 option java_multiple_files = true;
 
 enum ProgramingLanguage {
-  UNKNOWN = 0;
+  PROGRAMING_LANGUAGE_UNSPECIFIED = 0;
   C = 1;
   CPP = 2;
   CSHARP = 3;
