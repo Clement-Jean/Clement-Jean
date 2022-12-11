@@ -18,7 +18,7 @@ option java_multiple_files = true;
 extend google.protobuf.FieldOptions {
   uint32 api_version = 1036;
   Date created_at = 1037;
-  Kind kind = 10378;
+  Kind kind = 1038;
   Metadata metadata = 1039;
   Status status = 1040;
   Spec spec = 1041;
