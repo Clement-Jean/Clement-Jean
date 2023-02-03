@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package clementjean;
 
-import "google/protobuf/empty.proto";
 import "options.proto";
 
 option go_package = "github.com/Clement-Jean/Clement-Jean/proto";
@@ -11,27 +10,25 @@ option java_package = "com.clementjean.proto";
 option java_multiple_files = true;
 
 message AboutMe {
-  google.protobuf.Empty value = 1 [
-    (api_version) = 26,
-    (created_at) = {
-      chinese_year: "🐷",
-      year: 1995,
-      month: NOVEMBER,
-      day: 20
-    },
-    (kind) = HUMAN,
-    (metadata) = {
-      name: "Clément Jean",
-      from: "🇫🇷",
-      live_in: "🇨🇳",
-      languages: [ C, CPP, GO, JAVA, KOTLIN ]
-    },
-    (status).work = RECORDING_A_NEW_COURSE,
-    (spec).purpose = "Help others learn Protobuf and gRPC",
-    (favorite) = {
-      number: 42,
-      programing_language: PROGRAMING_LANGUAGE_UNSPECIFIED,
-      emoji_sequence: "🙈🙉🙊"
-    }
-  ];
+  option (api_version) = 27;
+  option (created_at) = {
+    chinese_year: "🐷",
+    year: 1995,
+    month: NOVEMBER,
+    day: 20
+  };
+  option (kind) = HUMAN;
+  option (metadata) = {
+    name: "Clément Jean",
+    from: "🇫🇷",
+    live_in: "🇨🇳",
+    languages: [ C, CPP, GO, JAVA, KOTLIN ]
+  };
+  option (status).work = RECORDING_A_NEW_COURSE;
+  option (spec).purpose = "Helping others learn Protobuf and gRPC";
+  option (favorite) = {
+    number: 42,
+    programing_language: PROGRAMING_LANGUAGE_UNSPECIFIED,
+    emoji_sequence: "🙈🙉🙊"
+  };
 }
