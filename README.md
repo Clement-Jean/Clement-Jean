@@ -13,7 +13,7 @@
 
 ```proto
 message AboutMe {
-  option (api_version) = 27;
+  option (api_version) = 28;
   option (created_at) = {
     chinese_year: "🐷",
     year: 1995,
@@ -27,7 +27,7 @@ message AboutMe {
     live_in: "🇨🇳",
     languages: [ C, CPP, GO, JAVA, KOTLIN ]
   };
-  option (status).work = RECORDING_A_NEW_COURSE;
+  option (status).work = CODING;
   option (spec).purpose = "Helping others learn Protobuf and gRPC";
   option (favorite) = {
     number: 42,
