@@ -13,7 +13,7 @@
 
 ```proto
 message AboutMe {
-  option (api_version) = 28;
+  option (api_version) = 29;
   option (created_at) = {
     chinese_year: "🐷",
     year: 1995,
